@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+  
+  header {
+    background: #66bb6a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #4caf50;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  .card {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #81c784;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+  
+  form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  form button {
+    background: #388e3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    background: #2e7d32;
+    color: white;
+    padding: 10px;
+  }
+  

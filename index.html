@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/Hasiru-32x32.png" />
+    <title>Hasiru | A group of nature enthusiasts</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+          publicKey: "6WG7zu5N0AoMZZFlZ",
+        });
+      })();
+</script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-box">
+        <img src="img/Hasiru-64x64.png" alt="Logo" class="logo" />
+      </div>
+      <div class="text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">Hasiru</span>
+          <span class="heading-primary-sub">A group of nature enthusiasts</span>
+          <span class="heading-secondary-sub"
+            >Trees, Farmers, Forest – Our Earth, Our Responsibility</span
+          >
+        </h1>
+      </div>
+    </header>
+    <div id="about-us" class="about-us">
+      <div class="about-us-content">
+        <div class="about-us-heading">About us</div>
+        <div class="underline">
+          <div class="small-underline"></div>
+          <div class="big-underline"></div>
+        </div>
+        <h3 class="sub-heading">Hasiru</h3>
+        <p class="about-us-paragraph">
+          We are a group of nature lovers committed to planting trees,
+          supporting poor farmers, and helping forest guards with essential
+          supplies.
+        </p>
+      </div>
+      <div class="about-us-images">
+        <img
+          src="img/np-landscape_600x400.jpg"
+          class="image image-1"
+          alt="landscape"
+        />
+
+        <img
+          src="img/night-queen_600x400.jpg"
+          class="image image-2"
+          alt="night-queen"
+        />
+
+        <img
+          src="img/np-tour_600x400.jpg"
+          class="image image-3"
+          alt="tour"
+        />
+        <img src="img/hero.jpg" class="image image-4" alt="hero image" />
+      </div>
+    </div>
+    <section id="Activities" class="activities">
+      <div class="common-header">
+        <h1 class="common-heading">Our Activities</h1>
+        <div class="underline">
+          <div class="small-underline"></div>
+          <div class="big-underline"></div>
+        </div>
+      </div>
+      <div class="activity-cards-wrapper">
+        <div class="activity-card">
+          <img src="img/cus-palntation.jpg" alt="single activity" />
+          <div class="activity-card-content">
+            <h1 class="activity-card-heading">Plantation Drives</h1>
+            <p class="activity-card-paragraph">
+              Organizing regular plantation events in urban and rural areas.
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img src="img/cus-farmers.jpg" alt="single activity" />
+          <div class="activity-card-content">
+            <div class="activity-card-heading">Support to Farmers</div>
+            <p class="activity-card-paragraph">
+              Providing tools, seeds, and basic financial aid to poor farmers.
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img src="img/np-donation.jpg" alt="single activity" />
+          <div class="activity-card-content">
+            <div class="activity-card-heading">Forest Guard Aid</div>
+            <p class="activity-card-paragraph">
+              Supplying essentials like torches, boots, and jackets to forest
+              guards.
+            </p>
+          </div>
+        </div>
+        <div class="activity-card">
+          <img src="img/school-support.jpg" alt="single activity" />
+          <div class="activity-card-content">
+            <div class="activity-card-heading">Support to Schools</div>
+            <p class="activity-card-paragraph">
+              Providing clean and safe RO drinking water to schools where clean
+              water facilities are not available.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="get-involved">
+      <div class="get-involved-content">
+        <div class="common-header">
+          <h1 class="common-heading">Get Involved</h1>
+          <div class="underline">
+            <div class="small-underline"></div>
+            <div class="big-underline"></div>
+          </div>
+          <p class="about-us-paragraph1">
+            Join our mission! Whether by volunteering or donating, you can make
+            a difference.
+          </p>
+        </div>
+      </div>
+      <div class="form-container">
+        <form id="getinvolve">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <textarea id="message" placeholder="How would you like to help?"  required></textarea>
+          <button type="button" onclick="sendEmail(event)">Submit</button>
+        </form>
+        <div id="formMessage">sucess!</div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="main-part">
+        <div class="footer-list-wrapper">
+          <h3 class="footer-heading">Hasiru</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a href="#" class="footer-list-link">support@hasiru.com</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="footer-list-link"
+                >Bangalore, #49 BSK 3rd Stage</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="footer-list-link">Tel: 998-6450-538</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-list-wrapper">
+          <h3 class="footer-heading">Explore</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a href="#about-us" class="footer-list-link">Home</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#about-us" class="footer-list-link">About Us</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#Activities" class="footer-list-link">Activities</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#get-involved" class="footer-list-link">Get-Involved</a>
+            </li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <h3 class="footer-heading">Gallery</h3>
+          <div class="gallery-images">
+            <div class="image-wrapper">
+              <img
+                src="img/brain-storm.jpg"
+                class="footer-image"
+                alt="gallery image 1"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="img/hero.jpg"
+                class="footer-image"
+                alt="gallery image 2"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="img/night-queen.jpg"
+                class="footer-image"
+                alt="gallery image 3"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="img/np-tour_600x400.jpg"
+                class="footer-image"
+                alt="gallery image 4"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="img/np-landscape.jpg"
+                class="footer-image"
+                alt="gallery image 5"
+              />
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="img/fruits-tree_700x400.jpg"
+                class="footer-image"
+                alt="gallery image 3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="creator-part">
+        <div class="copyright-text">
+          <p>Copyright ©2023. Hasiru All right reserved.</p>
+        </div>
+        <div class="text-right">
+          <p>designed by <a href="mailto:dewan.sind@gmail.com">Samiran</a></p> 
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
